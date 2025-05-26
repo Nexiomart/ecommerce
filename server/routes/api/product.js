@@ -94,7 +94,7 @@ router.get('/list', async (req, res) => {
 
     const categoryFilter = category ? { category } : {};
     const basicQuery = getStoreProductsQuery(min, max, rating);
-
+    console.log(basicQuery)
     const userDoc = await checkAuth(req);
     const categoryDoc = await Category.findOne({
       slug: categoryFilter.category,
@@ -189,7 +189,8 @@ router.post(
       const quantity = req.body.quantity;
       const price = req.body.price;
       const taxable = req.body.taxable;
-      const isActive = req.body.isActive;
+      // const isActive = req.body.isActive;
+      const isActive = req.body.isActive !== undefined ? req.body.isActive : true;
       const brand = req.body.brand;
       const image = req.file;
 

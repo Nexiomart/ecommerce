@@ -8,7 +8,8 @@ export const SOCKET_URL =
 export const ROLES = {
   Admin: 'ROLE ADMIN',
   Member: 'ROLE MEMBER',
-  Merchant: 'ROLE MERCHANT'
+  Merchant: 'ROLE MERCHANT',
+  GrowthPartner: 'ROLE GROWTH PARTNER'
 };
 
 export const CART_ITEMS = 'cart_items';

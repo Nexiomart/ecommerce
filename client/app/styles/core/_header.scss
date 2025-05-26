@@ -5,7 +5,8 @@
 
   .fa,
   span {
-    color: $white;
+    // color: $white;
+    color: orange;
     font-size: $font-size-medium !important;
     font-weight: $font-weight-normal;
     margin: 0px 5px;
@@ -13,7 +14,8 @@
 }
 
 .header {
-  background-color: $white;
+  // background-color: $white;
+  background: linear-gradient(to right, $white 20% , rgb(254, 196, 89) );
   border-bottom: $border-primary;
 
   .logo {
@@ -51,7 +53,7 @@
   }
 
   .cart-icon {
-    position: relative;
+    position: relative; 
     line-height: 100%;
 
     &:hover {
@@ -74,6 +76,7 @@
 
   .navbar {
     background-color: $white !important;
+    // background-color: rgb(232, 146, 41);
     justify-content: flex-end;
     padding: 0;
 
@@ -143,13 +146,20 @@
       justify-content: center;
     }
 
+    // .logo {
+    //   margin: 0px;
+    //   color: $font-custom-color !important;
+    //   @include media-breakpoint-up(md) {
+    //     
+    //   }
+    // }
     .logo {
-      margin: 0px;
-      color: $font-custom-color !important;
-      @include media-breakpoint-up(md) {
-        margin-left: 15px;
-      }
-    }
+  height: 70px; /* Adjust as needed */
+  width: auto;
+  object-fit: contain;
+  margin-left: 15px;
+}
+
   }
 
   .cart-badge {

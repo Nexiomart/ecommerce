@@ -6,7 +6,7 @@ exports.disableProducts = products => {
     return {
       updateOne: {
         filter: { _id: item._id },
-        update: { isActive: false }
+        update: { isActive: true }
       }
     };
   });

@@ -15,6 +15,7 @@ const secret = keys.jwt.secret;
 
 const opts = {};
 opts.jwtFromRequest = ExtractJwt.fromAuthHeaderAsBearerToken();
+opts.secretOrKey = process.env.JWT_SECRET;
 opts.secretOrKey = secret;
 
 passport.use(

@@ -14,18 +14,22 @@ const UserRole = props => {
 
   return (
     <>
-      {user.role === ROLES.Admin ? (
-        <Badge variant='primary' className={className}>
-          Admin
-        </Badge>
-      ) : user.role === ROLES.Merchant ? (
-        <Badge variant='dark' className={className}>
-          Merchant
-        </Badge>
-      ) : (
-        <Badge className={className}>Member</Badge>
-      )}
-    </>
+  {user.role === ROLES.Admin ? (
+    <Badge variant='primary' className={className}>
+      Admin
+    </Badge>
+  ) : user.role === ROLES.Merchant ? (
+    <Badge variant='dark' className={className}>
+      Merchant
+    </Badge>
+  ) : user.role === ROLES.GrowthPartner ? (
+    <Badge variant='success' className={className}>
+      Growth Partner
+    </Badge>
+  ) : (
+    <Badge className={className}>Member</Badge>
+  )}
+</>
   );
 };
 

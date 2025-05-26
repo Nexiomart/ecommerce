@@ -179,9 +179,12 @@ class Navigation extends React.PureComponent {
                     onClick={() => this.toggleMenu()}
                   />
                 )}
-                <Link to='/'>
-                  <h1 className='logo'>MERN Store</h1>
-                </Link>
+                {/* <Link to='/'>
+                  <h1 className='logo'>Nexio Mart</h1>
+                </Link> */}
+                 <Link to='/'>
+                 <img src='/Nexio-logo.jpg' alt='Nexio Mart Logo' className='logo' />
+                 </Link>
               </div>
             </Col>
             <Col
