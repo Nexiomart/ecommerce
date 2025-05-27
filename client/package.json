@@ -1,6 +1,6 @@
 {
-  "version": "1.0.0 ",
-  "description": "MERN Ecommerce Client",
+  "version": "1.0.0 "
+  "description ": "MERN Ecommerce Client",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
