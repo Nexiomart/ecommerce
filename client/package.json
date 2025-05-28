@@ -1,11 +1,11 @@
 {
-  "version": "1.0.0 "
-  "description ": "MERN Ecommerce Client",
+  "version": "1.0.0 ",
+  "description": "MERN Ecommerce Client",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
     "clean": "rimraf dist",
     "build": "npm run clean && cross-env NODE_ENV=production webpack --mode production --config webpack/webpack.prod.js",
     "dev": "cross-env NODE_ENV=development webpack-dev-server --config webpack/webpack.dev.js"
