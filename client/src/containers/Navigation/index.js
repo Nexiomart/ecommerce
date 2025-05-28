@@ -31,7 +31,7 @@ import actions from '../../actions';
 import Button from '../../components/Common/Button';
 import CartIcon from '../../components/Common/CartIcon';
 import { BarsIcon } from '../../components/Common/Icon';
-import MiniBrand from '../../components/Store//MiniBrand';
+import MiniBrand from '../../components/Store/MiniBrand';
 import Menu from '../NavigationMenu';
 import Cart from '../Cart';
 
