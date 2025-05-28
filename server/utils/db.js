@@ -7,7 +7,7 @@ const { database } = keys;
 
 const setupDB = async () => {
   try {
-    // Connect to MongoDB
+    // Connect to MongoDB database.url
     mongoose.set('useCreateIndex', true);
     mongoose
       .connect(database.url, {
