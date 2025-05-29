@@ -35,7 +35,7 @@ class Shop extends React.PureComponent {
     const { products, advancedFilters, filterProducts } = this.props;
     const { totalPages, currentPage, count, limit, order } = advancedFilters;
     const displayPagination = totalPages > 1;
-    const totalProducts = products.length;
+    // const totalProducts = products.length;
     const left = limit * (currentPage - 1) + 1;
     const right = totalProducts + left - 1;
 
