@@ -327,7 +327,7 @@ class Navigation extends React.PureComponent {
           aria-hidden={`${isMenuOpen ? false : true}`}
         >
           <div className='mini-menu'>
-            <Menu />
+            {/* <Menu /> */}
           </div>
           <div
             className={
