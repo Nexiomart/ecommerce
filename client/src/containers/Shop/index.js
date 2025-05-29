@@ -37,7 +37,7 @@ class Shop extends React.PureComponent {
     const displayPagination = totalPages > 1;
     // const totalProducts = products.length;
     const left = limit * (currentPage - 1) + 1;
-    const right = totalProducts + left - 1;
+    // const right = totalProducts + left - 1;
 
     return (
       <div className='shop'>
@@ -65,9 +65,9 @@ class Shop extends React.PureComponent {
                 className='text-center text-md-left mt-3 mt-md-0 mb-1 mb-md-0'
               >
                 <span>Showing: </span>
-                {totalProducts > 0
+                {/* {totalProducts > 0
                   ? `${left}-${right} products of ${count} products`
-                  : `${count} products`}
+                  : `${count} products`} */}
               </Col>
               <Col
                 xs={{ size: 12, order: 2 }}
