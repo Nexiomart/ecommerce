@@ -9,8 +9,8 @@ const routes = require('./routes');
 const socket = require('./socket');
 const setupDB = require('./utils/db');
 
-const port = process.env.PORT || 3000;
-// const { port } = keys;
+// const port = process.env.PORT || 3000;
+const { port } = keys;
 const app = express();
 
 app.use(express.urlencoded({ extended: true }));
@@ -21,7 +21,12 @@ app.use(
     frameguard: true
   })
 );
-app.use(cors());
+
+app.use(cors({
+  origin: '*', // Allow all origins
+  methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
+  allowedHeaders: ['Content-Type', 'Authorization']
+}));
 
 setupDB();
 require('./config/passport')(app);
